@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
-import pugImg from './assets/pug.jpg';
+import React from 'react';
 
 function CardPreview(props) {
   return(
     <div className="card-preview__wrapper">
-      <h2>card preview</h2>
-      <div>
-        <div>
-          <img src={pugImg} alt="" />
+      <h2>Card Preview</h2>
+      <div className="card-preview">
+        <div className="card-preview__header">
+          <img src={props.userAvatar} alt="business card avatar" />
         </div>
-        <div>
-          <h3>CEO Pug Entertainment</h3>
+        <div className="card-preview__body">
+          <h3>{props.jobTitle}</h3>
+          <div>
+            <span>{props.fullName}</span>
+            <span>{props.websiteURL}</span>
+          </div>
+          <div>
+            <span>{props.phoneNumber}</span>
+            <span>{props.userEmail}</span>
+          </div>
         </div>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
       </div>
     </div>
   );

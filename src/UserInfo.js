@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 function UserInfo(props) {
   return(
     <div className="user-info__wrapper">
-      <h2>enter your information</h2>
+      <h2>Enter Your Information</h2>
       <form action="POST">
         <input type="text" aria-label="full name"/>
         <input type="text" aria-label="job title"/>
@@ -12,7 +12,7 @@ function UserInfo(props) {
         <input type="email" aria-label="email"/>
         <input type="file" aria-label="business card image"/>
         <input type="reset" value="Reset" />
-        <button>download</button>
+        <button>Download</button>
       </form>
     </div>
   );
