@@ -12,16 +12,32 @@ class CardSection extends Component {
       'websiteURL': 'www.pugent.io',
       'phoneNumber': '(555) 555-5555',
       'userEmail': 'puggygee@example.com',
-      'userAvatar': pugImg
+      'userAvatar': pugImg,
+      'reset': false,
+      'download': false
     };
 
     this.handleFormChange = this.handleFormChange.bind(this);
   }
 
   handleFormChange(target) {
-    this.setState({
-      [target.name]: target.value
-    });
+    if (target.name === 'userAvatar') {
+      let file = target.files[0];
+      let reader = new FileReader();
+      
+      reader.onload = () => {
+        this.setState({
+          [target.name]: reader.result
+        });
+      };
+
+      reader.readAsDataURL(file);
+
+    } else {
+      this.setState({
+        [target.name]: target.value
+      });
+    }
   }
 
   render() {
