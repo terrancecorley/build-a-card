@@ -14,14 +14,21 @@ class CardSection extends Component {
       'userEmail': 'puggygee@example.com',
       'userAvatar': pugImg
     };
+
+    this.handleFormChange = this.handleFormChange.bind(this);
   }
 
-  
+  handleFormChange(target) {
+    this.setState({
+      [target.name]: target.value
+    });
+  }
 
   render() {
     return(
       <section className="card-section">
-        <UserInfo />
+        <UserInfo 
+          handleFormChange={this.handleFormChange}/>
         <CardPreview 
           fullName={this.state.fullName}
           jobTitle={this.state.jobTitle}

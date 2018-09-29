@@ -1,6 +1,9 @@
 import React from 'react';
 
 function CardPreview(props) {
+
+  // TODO: figure out how to display avatar img
+
   return(
     <div className="card-preview__wrapper">
       <h2>Card Preview</h2>
