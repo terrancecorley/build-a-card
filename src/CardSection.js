@@ -10,10 +10,10 @@ class CardSection extends Component {
 
   render() {
     return(
-      <Fragment>
+      <section className="card-section">
         <UserInfo />
         <CardPreview />
-      </Fragment>
+      </section>
     );
   }
 }

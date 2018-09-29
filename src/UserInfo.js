@@ -12,7 +12,7 @@ function UserInfo(props) {
         <input type="email" aria-label="email"/>
         <input type="file" aria-label="business card image"/>
         <input type="reset" value="Reset" />
-        <button>Download</button>
+        <button>download</button>
       </form>
     </div>
   );
