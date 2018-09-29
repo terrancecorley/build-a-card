@@ -16,6 +16,8 @@ class CardSection extends Component {
     };
   }
 
+  
+
   render() {
     return(
       <section className="card-section">
