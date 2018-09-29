@@ -12,9 +12,7 @@ class CardSection extends Component {
       'websiteURL': 'www.pugent.io',
       'phoneNumber': '(555) 555-5555',
       'userEmail': 'puggygee@example.com',
-      'userAvatar': pugImg,
-      'reset': false,
-      'download': false
+      'userAvatar': pugImg
     };
 
     this.handleFormChange = this.handleFormChange.bind(this);
@@ -32,7 +30,6 @@ class CardSection extends Component {
       };
 
       reader.readAsDataURL(file);
-
     } else {
       this.setState({
         [target.name]: target.value

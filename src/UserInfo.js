@@ -21,8 +21,8 @@ class UserInfo extends Component {
           <input type="phone" aria-label="phone number" name="phoneNumber" placeholder="Phone Number" value={this.props.phoneNumber}/>
           <input type="email" aria-label="email" name="userEmail" placeholder="Email" value={this.props.userEmail}/>
           <input type="file" aria-label="business card image" name="userAvatar" accept=".png, .jpg, .jpeg" value={this.props.userAvatar}/>
-          <input type="reset" value={this.props.reset} name="reset"/>
-          <button name="downloadBtn" value={this.props.download}>Download</button>
+          <input type="reset" name="reset"/>
+          <button name="downloadBtn">Download</button>
         </form>
       </div>
     );
