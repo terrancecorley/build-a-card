@@ -1,0 +1,1 @@
+{"version":3,"sources":["css/index.css"],"names":[],"mappings":"AAEA,IACE,cAAgB","file":"static/css/main.83e52bac.css","sourcesContent":["/* base styles */\n\nimg {\n  max-width: 100%;\n}\n\n\n// WEBPACK FOOTER //\n// ./src/css/index.css"],"sourceRoot":""}
