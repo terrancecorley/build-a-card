@@ -12,8 +12,9 @@ class CardSection extends Component {
       'phoneNumber': '',
       'userEmail': '',
       'userAvatar': null,
-      'textColor': '#333333',
-      'backgroundColor': '#f4f250'
+      'avatarBackgroundColor': '#f4f250',
+      'infoBackgroundColor': '#338855',
+      'textColor': '#222222',
     };
     this.baseState = this.state;
 
@@ -55,7 +56,8 @@ class CardSection extends Component {
           websiteURL={this.state.websiteURL}
           phoneNumber={this.state.phoneNumber}
           userEmail={this.state.userEmail}
-          backgroundColor={this.state.backgroundColor}
+          avatarBackgroundColor={this.state.avatarBackgroundColor}
+          infoBackgroundColor={this.state.infoBackgroundColor}
           textColor={this.state.textColor}/>
         <CardPreview 
           fullName={this.state.fullName}
@@ -63,7 +65,10 @@ class CardSection extends Component {
           websiteURL={this.state.websiteURL}
           phoneNumber={this.state.phoneNumber}
           userEmail={this.state.userEmail}
-          userAvatar={this.state.userAvatar}/>
+          userAvatar={this.state.userAvatar}
+          avatarBackgroundColor={this.state.avatarBackgroundColor}
+          infoBackgroundColor={this.state.infoBackgroundColor}
+          textColor={this.state.textColor}/>
       </section>
     );
   }

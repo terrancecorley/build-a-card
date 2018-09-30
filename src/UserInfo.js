@@ -26,8 +26,10 @@ class UserInfo extends Component {
           <input type="phone" aria-label="phone number" name="phoneNumber" placeholder="Phone Number" value={this.props.phoneNumber} onChange={this.onChange}/>
           <input type="email" aria-label="email" name="userEmail" placeholder="Email" value={this.props.userEmail} onChange={this.onChange}/>
           <input type="file" aria-label="business card image" name="userAvatar" accept=".png, .jpg, .jpeg" onChange={this.onChange}/>
-          <label htmlFor="backgroundColor">Background Color</label>
-          <input type="color" name="backgroundColor" id="backgroundColor" value={this.props.backgroundColor} onChange={this.onChange}/>
+          <label htmlFor="avatarBackgroundColor">Avatar Background Color</label>
+          <input type="color" name="avatarBackgroundColor" id="avatarBackgroundColor" value={this.props.avatarBackgroundColor} onChange={this.onChange}/>
+          <label htmlFor="infoBackgroundColor">Info Background Color</label>
+          <input type="color" name="infoBackgroundColor" id="infoBackgroundColor" value={this.props.infoBackgroundColor} onChange={this.onChange}/>
           <label htmlFor="textColor">Text Color</label>
           <input type="color" name="textColor" id="textColor" value={this.props.textColor} onChange={this.onChange}/>
           <input type="reset" name="reset" onClick={this.formReset}/>

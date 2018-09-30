@@ -2,15 +2,23 @@ import React from 'react';
 import pugImg from './assets/pug.jpg';
 
 function CardPreview(props) {
+  const cardPreviewHeader = {
+    backgroundColor: props.avatarBackgroundColor
+  };
+
+  const cardPreviewBody = {
+    backgroundColor: props.infoBackgroundColor,
+    color: props.textColor
+  };
 
   return(
     <div className="card-preview__wrapper">
       <h2>Card Preview</h2>
-      <div className="card-preview">
+      <div className="card-preview" style={cardPreviewHeader}>
         <div className="card-preview__header">
           <img src={props.userAvatar || pugImg} alt="business card avatar" />
         </div>
-        <div className="card-preview__body">
+        <div className="card-preview__body" style={cardPreviewBody}>
           <h3>{props.jobTitle || 'CEO Pug Entertainment'}</h3>
           <div>
             <span>{props.fullName || 'Pug Williams'}</span>
