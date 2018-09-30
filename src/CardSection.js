@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import UserInfo from './UserInfo';
 import CardPreview from './CardPreview';
-import pugImg from './assets/pug.jpg';
 
 class CardSection extends Component {
   constructor(props) {
