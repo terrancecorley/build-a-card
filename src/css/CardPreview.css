@@ -1,3 +1,33 @@
 .card-preview__wrapper {
-  flex-basis: 50%;
+  flex-basis: 45%;
+}
+
+.card-preview {
+  border: 2px solid #333;
+}
+
+.card-preview__header {
+  padding: 1.25em;
+  height: 10em;
+}
+
+img {
+  display: block;
+  border-radius: 100%;
+  width: 6em;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.card-preview__body {
+  padding: 1.5em;
+}
+
+.card-preview__body > div {
+  display: flex;
+  justify-content: space-between;
 }

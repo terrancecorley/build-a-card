@@ -1,5 +1,5 @@
 import React from 'react';
-import pugImg from './assets/pug.jpg';
+import pugImg from './assets/pug2.png';
 import './css/CardPreview.css';
 
 function CardPreview(props) {

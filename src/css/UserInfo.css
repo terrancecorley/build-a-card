@@ -79,3 +79,12 @@ input[type="reset"]:focus {
   color: firebrick;
   cursor: pointer;
 }
+
+p {
+  margin: 0.25em 0 1em;
+  font-size: 0.75em;
+}
+
+input[type="file"] {
+  margin-bottom: 0 !important;
+}
