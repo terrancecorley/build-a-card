@@ -5,4 +5,77 @@
 .user-info__form {
   display: flex;
   flex-direction: column;
+  border: 2px solid #333;
+  padding: 2em;
+  background-color: #e69942;
+}
+
+.user-info__form > * {
+  max-width: 65%;
+}
+
+.user-info__form > input:not([type="reset"]) {
+  margin-bottom: 1.5em;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="phone"],
+input[type="email"] {
+  border: none;
+  border-radius: 4px;
+  padding: 0.8em;
+  background-color: #fefefe;
+}
+
+label,
+input[type="file"]{
+  color: #fefefe;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 0.75em;
+}
+
+input[type="file"]:hover,
+input[type="color"]:hover,
+input[type="file"]:focus,
+input[type="reset"]:focus {
+  cursor: pointer;
+}
+
+input[type="color"] {
+  background-color: #fefefe;
+  min-width: 15em;
+  height: 50px;
+  border-radius: 2px;
+  padding: 2px;
+  align-self: flex-end;
+}
+
+input::placeholder,
+::-webkit-input-placeholder {
+  color: #333;
+}
+
+input[type="reset"] {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 8em;
+  font-weight: bold;
+  height: 3em;
+  border-radius: 4px;
+  color: #e69942;
+  border: 2px solid firebrick;
+  background-color: firebrick;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+  background-color: #e69942;
+  color: firebrick;
+  cursor: pointer;
 }
