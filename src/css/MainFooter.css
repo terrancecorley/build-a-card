@@ -1,0 +1,24 @@
+footer {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 3em 0 1em;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:visited {
+  color: rgb(56, 141, 94);
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: rgb(190, 154, 54);
+}
+
+span {
+  color: red;
+}
