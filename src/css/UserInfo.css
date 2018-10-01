@@ -1,0 +1,8 @@
+.user-info__wrapper {
+  flex-basis: 40%;
+}
+
+.user-info__form {
+  display: flex;
+  flex-direction: column;
+}

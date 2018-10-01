@@ -1,5 +1,6 @@
 import React from 'react';
 import pugImg from './assets/pug.jpg';
+import './css/CardPreview.css';
 
 function CardPreview(props) {
   const cardPreviewHeader = {

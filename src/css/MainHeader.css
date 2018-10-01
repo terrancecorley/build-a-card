@@ -1,0 +1,17 @@
+.site-header {
+  font-size: 1.5rem;
+  padding-top: 4em;
+}
+
+.site-logo__wrapper {
+  text-align: center;
+  border: 4px solid #F0CF65;
+  border-radius: 4px;
+  background-color: #fefefe;
+  margin: 0 auto;
+  width: 20em;
+}
+
+.site-logo {
+  font-family: 'Mali', cursive;
+}

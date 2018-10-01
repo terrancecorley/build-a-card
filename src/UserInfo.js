@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './css/UserInfo.css';
 
 class UserInfo extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class UserInfo extends Component {
     return(
       <div className="user-info__wrapper">
         <h2>Enter Your Information</h2>
-        <form action="POST">
+        <form action="POST" className="user-info__form">
           <input type="text" aria-label="full name" name="fullName" placeholder="Full Name" value={this.props.fullName} onChange={this.onChange}/>
           <input type="text" aria-label="job title" name="jobTitle" placeholder="Job Title" value={this.props.jobTitle} onChange={this.onChange}/>
           <input type="url" aria-label="website url" name="websiteURL" placeholder="Website URL" value={this.props.websiteURL} onChange={this.onChange}/>
