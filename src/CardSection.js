@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import UserInfo from './UserInfo';
 import CardPreview from './CardPreview';
 import './css/CardSection.css';
