@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { formTextChanges, formImgChanges } from './actions';
+import { formTextChanges, formImgChanges, resetState } from './actions';
 import './css/UserInfo.css';
 
 class UserInfo extends Component {
@@ -19,7 +19,7 @@ class UserInfo extends Component {
     let file = e.target.files[0];
     let reader = new FileReader();
     let target = e.target;
-    
+
     reader.onload = () => {
       this.props.dispatch(formImgChanges(target, reader.result));
     };
@@ -28,7 +28,7 @@ class UserInfo extends Component {
   }
 
   formReset() {
-    this.props.handleFormReset();
+    this.props.dispatch(resetState());
   }
 
   render() {

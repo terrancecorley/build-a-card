@@ -1,6 +1,7 @@
 import {
   FORM_TEXT_CHANGES,
-  FORM_IMG_CHANGES
+  FORM_IMG_CHANGES,
+  RESET_STATE
 } from '../actions';
 
 const initialState = {
@@ -15,8 +16,6 @@ const initialState = {
   'textColor': '#222222',
 };
 
-const baseState = initialState;
-
 export default (state = initialState, action) => {
   switch(action.type) {
     case FORM_TEXT_CHANGES:
@@ -25,12 +24,13 @@ export default (state = initialState, action) => {
         [action.name]: action.value,
       }
     case FORM_IMG_CHANGES:
-      console.log(action)
       return {
         ...state,
         [action.name]: action.value
       }
-    default:
+    case RESET_STATE:
+      return initialState
+    default: 
       return state;
   }
 };
