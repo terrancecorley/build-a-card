@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import pugImg from './assets/pug2.png';
 import './css/CardPreview.css';
 
@@ -35,4 +36,8 @@ function CardPreview(props) {
   );
 }
 
-export default CardPreview;
+const mapStateToProps = state => ({
+  userAvatar: state.form.userAvatar
+});
+
+export default connect(mapStateToProps)(CardPreview);
