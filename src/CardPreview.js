@@ -37,7 +37,15 @@ function CardPreview(props) {
 }
 
 const mapStateToProps = state => ({
-  userAvatar: state.form.userAvatar
+  fullName: state.form.fullName,
+  jobTitle: state.form.jobTitle,
+  websiteURL: state.form.websiteURL,
+  phoneNumber: state.form.phoneNumber,
+  userEmail: state.form.userEmail,
+  userAvatar: state.form.userAvatar,
+  avatarBackgroundColor: state.form.avatarBackgroundColor,
+  infoBackgroundColor: state.form.infoBackgroundColor,
+  textColor: state.form.textColor,
 });
 
 export default connect(mapStateToProps)(CardPreview);
